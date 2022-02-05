@@ -1,2 +1,4 @@
-# Alcoholic
-Website about alcohol with friends Woodangtang
+# Alcoholic/술꾼분당여자들
+
+! 먹고 죽자 !
+
