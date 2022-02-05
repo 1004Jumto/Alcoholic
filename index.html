@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <title>술꾼분당여자들</title>
+    <style media="screen">
+      .title {
+        text-align: center;
+      }
+      .category {
+        text-align: right;
+      }
+      a {
+        text-decoration: none;
+        color: black;
+        margin: 5%;
+      }
+      a:hover {
+        color: rgb(132, 135, 135);
+        text-decoration: underline;
+        text-decoration: solid underline rgb(82, 119, 119) 3px;
+      }
+      hr.titleLine {
+        border: none;
+        border-top: 4px double black;
+      }
+      hr.categoryLine {
+        margin-bottom: 0;
+      }
+      .columns {
+        border-left: 2px solid black;
+        height: 1000px;
+        position: absolute;
+        top: 150px;
+        left: 50%;
+        margin-left: -3px;
+      }
+      .photoWrapper {
+        margin-top: 100px;
+      }
+      .photoLine {
+        border-bottom: 2px solid black;
+      }
+      .circle {
+        width: 10px;
+        height: 10px;
+        border: 2px solid black;
+        border-radius: 50%;
+        position: absolute;
+        top: 223px;
+        background-color: black;
+      }
+      .wrapper {
+        border: 2px solid black;
+        width: 250px;
+        height: 350px;
+        margin-left: 300px;
+        margin-top: 20px;
+      }
+      .photoWrapper2 {
+        margin-top: 400px;
+      }
+      .photoLine2 {
+        border-bottom: 2px solid black;
+      }
+      .circle2 {
+        width: 10px;
+        height: 10px;
+        border: 2px solid black;
+        border-radius: 50%;
+        margin-left: 9.5%;
+        position: absolute;
+        top: 523px;
+        background-color: black;
+      }
+      .wrapper2 {
+        border: 2px solid black;
+        width: 300px;
+        height: 400px;
+        margin-left: 60px;
+        margin-top: 220px;
+      }
+      .photoWrapper3 {
+        margin-top: 75px;
+      }
+      .photoLine3 {
+        border-bottom: 2px solid black;
+      }
+      .circle3 {
+        width: 10px;
+        height: 10px;
+        border: 2px solid black;
+        border-radius: 50%;
+        position: absolute;
+        top: 823px;
+        background-color: black;
+      }
+      .wrapper3 {
+        border: 2px solid black;
+        width: 300px;
+        height: 400px;
+        margin-left: 300px;
+        margin-top: 20px;
+      }
+      .content {
+        display: grid;
+        grid-template-columns: 4fr 1fr 1fr 4fr;
+        grid-template-rows: repeat(2, 1fr);
+      }
+      img {
+        border: 1px solid black;
+        width: 200px;
+        height: auto;
+        margin-left: 25px;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="title">
+      <h1><a href="index.html">술꾼분당여자들</a></h1>
+      <hr class="titleLine">
+    </div>
+    <div class="category">
+      <span><a href="intro.html">INTRO</a></span>
+      <span><a href="">HIT THE</a></span>
+      <span><a href="">SIGNATURE</a></span>
+      <hr class="categoryLine">
+    </div>
+    <div class="content">
+
+      <script type="text/javascript">
+        var templatePhotoEven = '
+        <div class="wrapper">
+          <img src="./images/sample.jpg" class="photo">
+          <span class="date">(date), (place)</span>
+        </div>
+        <div class="photoWrapper">
+          <div class="circle"></div>
+          <div class="photoLine"></div>
+        </div>
+        ';
+        var templatePhotoOdd = '
+          <div class="photoWrapper2">
+            <div class="photoLine2"></div>
+            <div class="circle2"></div>
+          </div>
+          <div class="wrapper2">
+            <img src="./images" class="photo">
+            <span class="date">(date), (place)</span>
+          </div>
+        ';
+        document.wirte(templatePhotoEven);
+      </script>
+
+
+      <div class="wrapper">
+        <img src="./images/sample.jpg" class="photo">
+        <span class="date">(date), (place)</span>
+      </div>
+      <div class="photoWrapper">
+        <div class="circle"></div>
+        <div class="photoLine"></div>
+      </div>
+
+      <div class="photoWrapper2">
+        <div class="photoLine2"></div>
+        <div class="circle2"></div>
+      </div>
+      <div class="wrapper2">
+        <img src="./images" class="photo">
+        <span class="date">(date), (place)</span>
+      </div>
+
+      <div class="wrapper3">
+        <img src="./images" class="photo">
+        <span class="date">(date), (place)</span>
+      </div>
+      <div class="photoWrapper3">
+        <div class="photoLine3"></div>
+        <div class="circle3"></div>
+      </div>
+
+    </div>
+    <div class="columns"></div>
+  </body>
+</html>

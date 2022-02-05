@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>INTRO</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      .title {
+        text-align: center;
+      }
+      .category {
+        text-align: right;
+      }
+      a {
+        text-decoration: none;
+        color: black;
+        margin: 10px;
+      }
+      a:hover {
+        color: rgb(132, 135, 135);
+        text-decoration: underline;
+        text-decoration: solid underline rgb(82, 119, 119) 3px;
+      }
+      hr.titleLine {
+        border: none;
+        border-top: 4px double black;
+      }
+      hr.categoryLine {
+        margin-bottom: 0;
+      }
+
+      img {
+        width: 200px;
+        height: auto;
+      }
+      .content {
+        display: grid;
+        grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
+        margin: 50px;
+        margin-left: 110px;
+      }
+      ul {
+        padding: 10px;
+      }
+      @media screen and (max-width: 1260px) {
+        .intro {
+          gird-template-columns: 1fr 1fr;
+        }
+        .content {
+          grid-template-columns: 1fr;
+          grid-template-rows: repeat(3, 1fr);
+        }
+        .wrapper_right, .wrapper_left {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="title">
+      <h1><a href="index.html">술꾼분당여자들</a></h1>
+      <hr class="titleLine">
+    </div>
+    <div class="category">
+      <span><a href="intro.html">INTRO</a></span>
+      <span><a href="">HIT THE</a></span>
+      <span><a href="">SIGNATURE</a></span>
+      <hr class="categoryLine">
+    </div>
+
+    <div class="content">
+      <div class="wrapper_right"></div>
+      <div class="intro">
+          <img class="photo" src="intro_profile/profile.jpg" alt="손수경 이미지 사진">
+          <div class="detail">
+            <ul>
+              <li>이름: 손수경</li>
+              <li>나이: 01년생, 22살,,,,,,ㅎ</li>
+              <li>MBTI: E(I)SFP</li>
+              <li>주량: 소주 반병~1병, 칵테일: 3잔</li>
+              <li>그 외: 난 알쓰야,,,,,,,,</li>
+            </ul>
+          </div>
+      </div>
+      <div class="intro">
+          <img class="photo" src="intro_profile/profile.jpg" alt="이예진 이미지 사진">
+          <div class="detail">
+            <ul>
+              <li>이름: </li>
+              <li>나이: </li>
+              <li>MBTI: </li>
+              <li>주량: </li>
+              <li>그 외: </li>
+            </ul>
+          </div>
+      </div>
+      <div class="intro">
+        <img class="photo" src="intro_profile/profile.jpg" alt="최민영 이미지 사진">
+        <div class="detail">
+          <ul>
+            <li>이름: 최민영</li>
+            <li>나이: 21살</li>
+            <li>MBTI: (POWER)ENFP</li>
+            <li>주량: 소주 2병, 칵테일 ... 아직은 잘ㅋㅋㅋ</li>
+            <li>그 외: 난 뱀의 머리를 할게</li>
+          </ul>
+        </div>
+      </div>
+      <div class="wrapper_left"></div>
+    </div>
+  </body>
+</html>
